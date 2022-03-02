@@ -43,6 +43,8 @@ while True:
 
     # Срабатывание будильника
     if (alarm_hour == current_hour and alarm_min == current_min and alarm_sec == current_sec):
+        # вывод в консоль при срабатывании
         print("Подъем!")
+        # мелодия будильника
         playsound('D:/Downloads/14990_flying-alarm.mp3')
         break
