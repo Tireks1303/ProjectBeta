@@ -26,5 +26,23 @@ while True:
         break
 
 
+alarm_hour = int(alarm_time[0:2])
+alarm_min = int(alarm_time[3:5])
+alarm_sec = int(alarm_time[6:8])
 
 
+while True:
+    # получение текущего времени с компьютера
+    now = datetime.now()
+
+    # получение установленного времени будильника
+    current_hour = now.hour
+    current_min = now.minute
+    current_sec = now.second
+
+
+    # Срабатывание будильника
+    if (alarm_hour == current_hour and alarm_min == current_min and alarm_sec == current_sec):
+        print("Подъем!")
+        playsound('D:/Downloads/14990_flying-alarm.mp3')
+        break
