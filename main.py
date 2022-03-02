@@ -1,7 +1,7 @@
 from datetime import *
 from playsound import *
 
-# Проверка корректности ввода пользователем времени
+# Проверка корректности ввода пользователем времени для будильника
 def validate_time(alarm_time):
     if len(alarm_time) != 8:
         return "Неверный формат, попробуйте снова"
